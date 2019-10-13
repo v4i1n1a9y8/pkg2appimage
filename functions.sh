@@ -118,7 +118,7 @@ move_lib()
 # Delete blacklisted files
 delete_blacklisted()
 {
-  BLACKLISTED_FILES=$(cat_file_from_url https://github.com/AppImage/pkg2appimage/raw/${PKG2AICOMMIT}/excludelist | sed 's|#.*||g')
+  BLACKLISTED_FILES=$(cat_file_from_url https://github.com/v4i1n1a9y8/pkg2appimage/raw/${PKG2AICOMMIT}/excludelist | sed 's|#.*||g')
   echo $BLACKLISTED_FILES
   for FILE in $BLACKLISTED_FILES ; do
     FILES="$(find . -name "${FILE}" -not -path "./usr/optional/*")"
