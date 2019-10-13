@@ -171,7 +171,7 @@ libpango-1.0.so.0
 # in file libgpg-error.so.0 with link time reference
 libgpg-error.so.0
 
-libjack.so.0
+# libjack.so.0
 # it must match the ABI of the JACK server which is installed in the base system
 # rncbc confirmed this
 
